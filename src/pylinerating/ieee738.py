@@ -190,4 +190,4 @@ def thermal_rating(
 
     current = np.sqrt((qc + qr - qs) / conductor.resistance(conductor_temperature))
 
-    return current
+    return current, qs, qr, qc
